@@ -64,32 +64,33 @@ No  → Customer did not churn
 
 3. Models Evaluated
 
-Several classification approaches were explored.
+   Several classification approaches were explored.
 
-a. Logistic Regression
+     a. Logistic Regression
 
-Logistic Regression was used as the baseline classification model.
+        Logistic Regression was used as the baseline classification model.
 
-b. Logistic Regression with Class Weighting
+     b. Logistic Regression with Class Weighting
 
-class_weight='balanced' was used to give greater importance to the minority churn class.
+        class_weight='balanced' was used to give greater importance to the minority churn class.
 
-c. Random Forest
+     c. Random Forest
 
-Random Forest was also trained and evaluated, including a class-weighted version.
+        Random Forest was also trained and evaluated, including a class-weighted version.
 
-d. Hyperparameter Tuning
+     d. Hyperparameter Tuning
 
-GridSearchCV was used to tune Logistic Regression hyperparameters.
+        GridSearchCV was used to tune Logistic Regression hyperparameters.
 
-📊 Model Comparison
-
+ 4. 📊 Model Comparison
+```
 Model	Churn Recall	Churn Precision	ROC-AUC
 Logistic Regression (Baseline)	0.56	0.51	0.8422
 Logistic Regression (class_weight='balanced')	0.78	0.51	0.8417
 Random Forest	0.49	0.62	0.8248
 Random Forest (class_weight='balanced')	0.63	0.58	0.8176
 Logistic Regression (GridSearchCV)	0.56	0.66	0.8422
+```
 
 Recall and precision in this table refer specifically to the churn class (Churn = 1).
 
@@ -112,21 +113,23 @@ Pipeline
 🧮 Confusion Matrix
 
 The final balanced Logistic Regression model produced the following confusion matrix:
+```
 
                  Predicted
                  0       1
 Actual   0      748     287
          1       81     293
-
+```
 
 💾 Model Saving
 
 The final trained pipeline was saved using Joblib:
-
+```
 joblib.dump(
     final_model,
     "models/Customer_churn_model.pkl"
 )
+```
 
 The saved pipeline contains both the preprocessing steps and the trained Logistic Regression model.
 
@@ -149,7 +152,7 @@ Stay probability
 Visual churn risk indicator
 
 📁 Project Structure
-
+```
 customer-churn-prediction/
 │
 ├── Data/
@@ -165,7 +168,7 @@ customer-churn-prediction/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 🛠️ Tech Stack
 Programming Language
@@ -189,18 +192,27 @@ Joblib
 🚀 Setup & Installation
 
 1. Clone the repository
+```
 git clone https://github.com/aayushjohari/customer-churn-prediction.git
+```
 
 2. Navigate to the project
+```
 cd customer-churn-prediction
+```
 
 3. Create a virtual environment
+```
 python -m venv venv
+```
 
 4. Activate the environment
+```
 venv\Scripts\activate
+```
 
 macOS / Linux
+```
 source venv/bin/activate
-
+```
 5. Install dependencies
