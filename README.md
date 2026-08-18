@@ -229,3 +229,19 @@ streamlit run app.py
 ## 🚀 Live Demo
 
 👉 [Try the Customer Churn Prediction App](https://customer-churn-prediction-0401.streamlit.app/)
+
+---
+
+## Future Improvements
+
+- Experiment with additional models and threshold tuning
+- Perform deeper feature importance and model interpretability analysis
+- Improve the Streamlit UI and add more visual insights
+- Monitor model performance with new customer data
+
+## Deployment
+
+The final machine learning model is deployed as an interactive Streamlit application.
+
+**Live Application:**  
+https://customer-churn-prediction-0401.streamlit.app/
