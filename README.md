@@ -40,7 +40,9 @@ The dataset contains information about:
 Yes → Customer churned
 No  → Customer did not churn
 
-🔄 Project Workflow
+---
+
+### 🔄 Project Workflow
 
 1. Data Cleaning & EDA
 
@@ -91,7 +93,7 @@ Logistic Regression (GridSearchCV)	0.56	0.66	0.8422
 
 Recall and precision in this table refer specifically to the churn class (Churn = 1).
 
-🏆 Final Model
+### 🏆 Final Model
 
 The final model selected for deployment was:
 
