@@ -178,21 +178,26 @@ customer-churn-prediction/
 
 ## 🛠️ Tech Stack
 
-Programming Language
+Programming 
 Python
+
 Data Analysis
 Pandas
 NumPy
+
 Data Visualization
 Matplotlib
 Seaborn
+
 Machine Learning
 Scikit-learn
 Logistic Regression
 Random Forest
 GridSearchCV
+
 Model Deployment
 Streamlit
+
 Model Persistence
 Joblib
 
@@ -213,6 +218,7 @@ cd customer-churn-prediction
 3. Create a virtual environment
 ```
 python -m venv venv
+
 ```
 
 4. Activate the environment
