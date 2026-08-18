@@ -232,6 +232,18 @@ streamlit run app.py
 
 ---
 
+## 📸 Application Preview
+
+### Customer Churn Prediction App
+
+![Customer Churn Prediction App](screenshots/customer-churn-app.png)
+
+### Prediction Result
+
+![Customer Churn Prediction Result](screenshots/customer-churn-prediction.png)
+
+---
+
 ## Future Improvements
 
 - Experiment with additional models and threshold tuning
