@@ -144,17 +144,17 @@ The trained Machine Learning pipeline was deployed using Streamlit.
 
 The application allows users to enter customer information including:
 
-Demographics
-Service subscriptions
-Contract information
-Billing information
+    Demographics
+    Service subscriptions
+    Contract information
+    Billing information
 
 The application provides:
 
-Churn / Stay prediction
-Churn probability
-Stay probability
-Visual churn risk indicator
+    Churn / Stay prediction
+    Churn probability
+    Stay probability
+    Visual churn risk indicator
 
 ## 📁 Project Structure
 ```
@@ -182,21 +182,13 @@ Programming : Python
 
 Data Analysis : Pandas , NumPy
 
-Data Visualization
-Matplotlib
-Seaborn
+Data Visualization : Matplotlib , Seaborn
 
-Machine Learning
-Scikit-learn
-Logistic Regression
-Random Forest
-GridSearchCV
+Machine Learning : Scikit-learn , Logistic Regression , Random Forest , GridSearchCV
 
-Model Deployment
-Streamlit
+Model Deployment : Streamlit
 
-Model Persistence
-Joblib
+Model Persistence : Joblib
 
 ---
 
@@ -217,7 +209,6 @@ cd customer-churn-prediction
 python -m venv venv
 
 ```
-
 4. Activate the environment
 ```
 venv\Scripts\activate
