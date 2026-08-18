@@ -34,7 +34,7 @@ The dataset contains information about:
 - Monthly charges
 - Total charges
 
-### Target Variable
+## Target Variable
 
 ```text
 Yes → Customer churned
@@ -42,7 +42,7 @@ No  → Customer did not churn
 ```
 ---
 
-### 🔄 Project Workflow
+## 🔄 Project Workflow
 
 1. Data Cleaning & EDA
 
@@ -68,19 +68,19 @@ No  → Customer did not churn
 
      a. Logistic Regression
 
-        Logistic Regression was used as the baseline classification model.
+    -> Logistic Regression was used as the baseline classification model.
 
      b. Logistic Regression with Class Weighting
 
-        class_weight='balanced' was used to give greater importance to the minority churn class.
+    -> class_weight='balanced' was used to give greater importance to the minority churn class.
 
      c. Random Forest
 
-        Random Forest was also trained and evaluated, including a class-weighted version.
+    -> Random Forest was also trained and evaluated, including a class-weighted version.
 
      d. Hyperparameter Tuning
 
-        GridSearchCV was used to tune Logistic Regression hyperparameters.
+    -> GridSearchCV was used to tune Logistic Regression hyperparameters.
 
  4. 📊 Model Comparison
 ```
@@ -97,7 +97,7 @@ Recall and precision in this table refer specifically to the churn class (Churn 
 ### 🏆 Final Model
 
 The final model selected for deployment was:
-
+```
 Logistic Regression
         +
 class_weight='balanced'
@@ -109,8 +109,10 @@ OneHotEncoder
 ColumnTransformer
         +
 Pipeline
+```
+---
 
-🧮 Confusion Matrix
+## 🧮 Confusion Matrix
 
 The final balanced Logistic Regression model produced the following confusion matrix:
 ```
@@ -120,8 +122,9 @@ The final balanced Logistic Regression model produced the following confusion ma
 Actual   0      748     287
          1       81     293
 ```
+---
 
-💾 Model Saving
+## 💾 Model Saving
 
 The final trained pipeline was saved using Joblib:
 ```
@@ -133,7 +136,9 @@ joblib.dump(
 
 The saved pipeline contains both the preprocessing steps and the trained Logistic Regression model.
 
-🌐 Streamlit Application
+---
+
+## 🌐 Streamlit Application
 
 The trained Machine Learning pipeline was deployed using Streamlit.
 
@@ -151,7 +156,7 @@ Churn probability
 Stay probability
 Visual churn risk indicator
 
-📁 Project Structure
+## 📁 Project Structure
 ```
 customer-churn-prediction/
 │
@@ -169,8 +174,10 @@ customer-churn-prediction/
 ├── README.md
 └── .gitignore
 ```
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
+
 Programming Language
 Python
 Data Analysis
@@ -188,6 +195,8 @@ Model Deployment
 Streamlit
 Model Persistence
 Joblib
+
+---
 
 🚀 Setup & Installation
 
@@ -210,9 +219,16 @@ python -m venv venv
 ```
 venv\Scripts\activate
 ```
-
-macOS / Linux
+  macOS / Linux
 ```
 source venv/bin/activate
 ```
+
 5. Install dependencies
+```
+pip install -r requirements.txt
+```
+6. Run the Streamlit application
+```
+streamlit run app.py
+```
