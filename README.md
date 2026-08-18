@@ -178,12 +178,9 @@ customer-churn-prediction/
 
 ## 🛠️ Tech Stack
 
-Programming 
-Python
+Programming : Python
 
-Data Analysis
-Pandas
-NumPy
+Data Analysis : Pandas , NumPy
 
 Data Visualization
 Matplotlib
