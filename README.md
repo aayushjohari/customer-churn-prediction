@@ -239,6 +239,8 @@ streamlit run app.py
 - Improve the Streamlit UI and add more visual insights
 - Monitor model performance with new customer data
 
+---
+
 ## Deployment
 
 The final machine learning model is deployed as an interactive Streamlit application.
