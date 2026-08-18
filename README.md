@@ -39,7 +39,7 @@ The dataset contains information about:
 ```text
 Yes → Customer churned
 No  → Customer did not churn
-
+```
 ---
 
 ### 🔄 Project Workflow
