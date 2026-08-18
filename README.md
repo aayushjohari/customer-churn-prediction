@@ -226,3 +226,6 @@ pip install -r requirements.txt
 ```
 streamlit run app.py
 ```
+## 🚀 Live Demo
+
+👉 [Try the Customer Churn Prediction App](https://customer-churn-prediction-0401.streamlit.app/)
