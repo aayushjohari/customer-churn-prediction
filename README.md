@@ -238,6 +238,8 @@ streamlit run app.py
 
 ![Customer Churn Prediction App](screenshots/customer-churn-app.png)
 
+---
+
 ### Prediction Result
 
 ![Customer Churn Prediction Result](screenshots/customer-churn-prediction.png)
